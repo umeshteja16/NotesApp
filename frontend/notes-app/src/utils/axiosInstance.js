@@ -15,6 +15,7 @@ axiosInstance.interceptors.request.use(
         if(accessToken) {
 
             config.headers.Authorization = `Bearer ${accessToken}`;
+            console.log("Access Token Set Successful.")
         }
         return config;
     },
